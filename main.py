@@ -27,6 +27,7 @@ model_path = "plant_disease_detector_84.358007.h5"
 if not os.path.exists(model_path):
     gdown.download(model_url, model_path, quiet=False)
     print("Model downloaded successfully")
+model = tf.keras.models.load_model(model_path)
 
 # Load class labels
 def load_class_labels(json_path='class_labels.json'):
