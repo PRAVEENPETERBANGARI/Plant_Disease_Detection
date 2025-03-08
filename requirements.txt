@@ -5,3 +5,4 @@ tensorflow == 2.15.0
 fastapi == 0.115.6
 uvicorn == 0.33.0
 gdown == 5.2.0
+python-multipart == 0.0.20
